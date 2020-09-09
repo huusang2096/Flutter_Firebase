@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "584782533283",
+    "firebase_url": "https://cows-7ce81.firebaseio.com",
+    "project_id": "cows-7ce81",
+    "storage_bucket": "cows-7ce81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584782533283:android:c091e9016df627a3036516",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584782533283-kcq3sln7ssqij11ppipknb6ll6bqtof3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEaJGeBEB-TlfAn9wDPnwziSiPNJMr_Ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584782533283-kcq3sln7ssqij11ppipknb6ll6bqtof3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
