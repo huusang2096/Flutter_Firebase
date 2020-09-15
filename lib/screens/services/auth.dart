@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_app_chat/screens/models/user.dart';
+import 'package:flutter_app_chat/screens/services/database.dart';
 
 class AuthService {
 
@@ -28,6 +29,7 @@ class AuthService {
     }
   }
 
+  //sign in with email & password
   Future<FirebaseUser> signInWithEmailAndPassword(String email,String pass) async{
     String errorMessage;
     try{
@@ -59,6 +61,9 @@ class AuthService {
     try{
       AuthResult result = await _firebaseAuth.createUserWithEmailAndPassword(email: email, password: pass);
       FirebaseUser user =result.user;
+
+      //create a new document for the user with the uid
+      await DatabaseService(uid: user.uid).updateUserData('0','new milk member',100);
       return user;
     }catch(e){
       print(e.toString());
